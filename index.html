@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <th>
+                Dress
+            </th>
+            <th>
+                Quantity
+            </th>
+            <th>
+                Price
+            </th>
+        </tr>
+        <tr>
+            <td><img src="./img/shirt.png" alt=""></td>
+            <td>
+                <div class="btn-center">
+                    <button>-</button>
+                    <button>1</button>
+                    <button>+</button>
+                </div>
+               
+            </td>
+            <td>$202</td>
+        </tr>
+        <tr>
+            <td><img src="./img/shirt_1.png" alt=""></td>
+            <td>
+                <div class="btn-center">
+                    <button id="sub" value="-">-</button>
+                    <button id="val" value="0">0</button>
+                    <button id="add" value="+">+</button>
+                </div>
+            </td>
+            <td>$150</td>
+        </tr>
+        <tr>
+            <td class="flex-D">
+                <img src="./img/shirt_2.png" alt="">
+            <div class="details">
+                <h4>polo shirt</h4>
+                <input type="button" value="add">
+            </div>
+            </td>
+            <td>
+                <div class="btn-center">
+                    <button value="-">-</button>
+                    <button value="0">0</button>
+                    <button value="+">+</button>
+                </div>
+            </td>
+            <td>$220</td>
+        </tr>
+    </table>
+    <script>
+var plus = document.getElementById('add');
+var number = document.getElementById('val');
+var minus = document.getElementById('sub');
+ plus.addEventListener('click',function(){
+     number.value = 1;
+ })
+
+    </script>
+</body>
+</html>
